@@ -6,13 +6,17 @@ public class Lecture2 {
 
 	public static void main(String[] args) {
 		Integer a = null;
-		String b = null;
-
+		Integer operation = null;
+		Integer c = null;
+		
 		Scanner stream = CreateConsoleInputStream();
 		System.out.println("Enter integer digit");
 		a = GetIntInput(stream);
 		System.out.println("Enter operation");
-		OperationsThrowConsoleInput(CreateConsoleInputStream());
+		operation = OperationsThrowConsoleInput(CreateConsoleInputStream());
+		System.out.println("Enter integer digit");
+		c = GetIntInput(stream);
+		System.out.println("Result is: " + OperationsPerformer(a,c, operation));
 		
 		
 	  /*  Scanner sc = new Scanner(System.in);
@@ -66,6 +70,27 @@ public class Lecture2 {
 		}
 		return op_id;
 
+	}
+	
+	private static Integer OperationsPerformer(int a, int b, int op_id) {
+		
+		
+		switch (op_id) {
+		case 1:
+			b = a+b;
+			break;
+		case 2:
+			b = a-b;
+			break;
+		case 3:
+			b = a*b;
+			break;
+		case 4:
+			b = a/b;
+			break;
+		}
+		return b;
+		
 	}
 
 	
