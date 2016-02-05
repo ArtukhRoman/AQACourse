@@ -8,22 +8,24 @@ public class Lecture2 {
 		Integer a = null;
 		Integer operation = null;
 		Integer c = null;
+		String b = null;
 		
-		Scanner stream = CreateConsoleInputStream();
+		/*Scanner stream = CreateConsoleInputStream();
 		System.out.println("Enter integer digit");
 		a = GetIntInput(stream);
 		System.out.println("Enter operation");
 		operation = OperationsThrowConsoleInput(CreateConsoleInputStream());
 		System.out.println("Enter integer digit");
 		c = GetIntInput(stream);
-		System.out.println("Result is: " + OperationsPerformer(a,c, operation));
+		System.out.println("Result is: " + OperationsPerformer(a,c, operation));*/
 		
 		
-	  /*  Scanner sc = new Scanner(System.in);
+	    Scanner sc = new Scanner(System.in);
+		/*a = sc.nextInt();
+		b = sc.nextLine();*/
+		b = sc.nextLine();
 		a = sc.nextInt();
-		b = sc.next();
-		a = sc.nextInt();
-		System.out.println(a);*/
+		System.out.println(b);
 	}
 
 	private static Scanner CreateConsoleInputStream() {
